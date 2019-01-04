@@ -53,7 +53,7 @@ public class Cliente implements Serializable {
 	@NotNull(message="la región no puede estar vacia")
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="region_id")
-	@JsonIgnoreProperties({"hibernateLazyInitializaer","handler"})
+	@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 	private Region region;
 	
 	/*@PrePersist
